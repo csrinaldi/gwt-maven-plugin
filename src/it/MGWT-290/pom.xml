@@ -81,6 +81,7 @@
           <disableAggressiveOptimization>true</disableAggressiveOptimization>
           <compilerMetrics>true</compilerMetrics>
           <fragmentCount>2</fragmentCount>
+          <jsInteropMode>JS</jsInteropMode>
         </configuration>
         <executions>
           <execution>

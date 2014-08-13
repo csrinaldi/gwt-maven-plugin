@@ -492,7 +492,7 @@ public class TestMojo
         sb.append( inlineLiteralParameters ? " -XinlineLiteralParameters" : " -XnoinlineLiteralParameters" );
         sb.append( optimizeDataflow ? " -XoptimizeDataflow" : " -XnooptimizeDataflow" );
         sb.append( ordinalizeEnums ? " -XordinalizeEnums" : " -XnoordinalizeEnums" );
-        sb.append( quirksMode ? " -norunStandardsMode" : " -runStandardsMode" );
+        //sb.append( quirksMode ? " -norunStandardsMode" : " -runStandardsMode" );
         sb.append( removeDuplicateFunctions ? " -XremoveDuplicateFunctions" : " -XnoremoveDuplicateFunctions" );
         sb.append( showUi ? " -showUi" : " -noshowUi" );
         sb.append( " -sourceLevel " ).append( quote( sourceLevel ) );

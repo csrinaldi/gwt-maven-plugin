@@ -333,6 +333,17 @@ public class CompileMojo
      * @since 2.6.0-rc1
      */
     private String sourceLevel;
+    
+    
+    /**
+     * EXPERIMENTAL:
+     * 
+     * Specifies JsInterop Support.
+     *
+     * @parameter default-value="JS" expression="${gwt.compiler.jsInteropMode}"
+     * @since 2.7.0-SNAPSHOT
+     */
+    private String jsInteropMode;
 
     public void doExecute( )
         throws MojoExecutionException, MojoFailureException
@@ -396,6 +407,7 @@ public class CompileMojo
             .arg( !removeDuplicateFunctions, "-XnoremoveDuplicateFunctions" )
             .arg( saveSource, "-saveSource" )
             .arg( "-sourceLevel", sourceLevel )
+            .arg( "-XjsInteropMode", jsInteropMode)
         ;
 
         if ( saveSourceOutput != null )

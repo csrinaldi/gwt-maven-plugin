@@ -64,6 +64,7 @@
           <ordinalizeEnums>false</ordinalizeEnums>
           <removeDuplicateFunctions>false</removeDuplicateFunctions>
           <saveSource>true</saveSource>
+          <jsInteropMode>JS</jsInteropMode>
           <saveSourceOutput>${project.build.directory}/savedSources</saveSourceOutput>
         </configuration>
         <executions>
